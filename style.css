@@ -95,7 +95,7 @@ body {
     color: white;
 }
 
-@media screen and (max-width:900px) {
+@media (max-width:800px) {
     body {
         overflow-y: auto;
     }
