@@ -95,9 +95,9 @@ body {
     color: white;
 }
 
-@media (min-width:300px) and (max-width:750px) {
+@media (min-width:300px) and (max-width:600px) {
     body {
-        overflow-y: auto;
+        overflow: hidden;
     }
 
     .layout {

@@ -5,10 +5,11 @@ const container = document.getElementById('container');
 let mouseDown = 0;
 document.body.onmousedown = function() { 
   mouseDown = 1;
-}
+};
+
 document.body.onmouseup = function() {
   mouseDown = 0;
-}
+};
 
 //Initialize grid size and brush color;
 let input;
@@ -33,12 +34,17 @@ function getColor(str) {
 
 //Set color of cube based off chosen color
 function colorCube (e) {
-    if (mouseDown>0)
-    {
+    if (mouseDown>0) {
         this.setAttribute("style", `background-color: ${color};`);
+        return;
     }
 }
 
+//Set color of cube based off chosen color - Touch Variant
+function colorCubeMobile (e) {
+    this.setAttribute("style", `background-color: ${color};`);
+        return;
+}
 //Get grid size from form
 function numSelector(){
     input = document.getElementById("userInput").value;
@@ -67,6 +73,8 @@ function createGrid(x) {
         let cube = document.createElement('div');
         cube.classList.add('grid-item');
         cube.addEventListener('mouseover', colorCube);
+        cube.addEventListener('touchstart', colorCubeMobile);
+        cube.addEventListener('touchmove', colorCubeMobile);
         container.appendChild(cube);
     }
 }
