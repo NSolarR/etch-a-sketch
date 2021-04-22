@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="layout">
+            <div id="left">
+                <h2>Refresh and change size</h2>
+                <form id="form" onsubmit="return false;">
+                    <input type="text" id="userInput" placeholder="Enter number. Max is 100"/>
+                    <input type="submit" onclick="numSelector();" value="Refresh"/>
+                </form>
+                <h2>Select brush color</h2>
+
+                <div id="colors">
+                    <div id="first-set">
+                        <button id='red' onclick="getColor('red');">Wide</button>
+                        <button id='orange' onclick="getColor('orange');">Wide</button>
+                        <button id='yellow' onclick="getColor('yellow');">Wide</button>
+                        <button id='green' onclick="getColor('green');">Wide</button>
+                        <button id='blue' onclick="getColor('blue');">Wide</button>
+                        <button id='purple' onclick="getColor('purple');">Wide</button>
+                    </div>
+                    <div id="second-set">
+                        <button id='hotpink' onclick="getColor('hotpink');">Wide</button>
+                        <button id='black' onclick="getColor('black');">Wide</button>
+                        <button id='white' onclick="getColor('white');">Wide</button>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <h1>Etch-A-Sketch</h1>
+                <div id="container">
+
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src='script.js'></script>
+</html>
