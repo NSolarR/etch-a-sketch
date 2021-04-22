@@ -69,6 +69,11 @@ body {
     margin-top:6px;
 }
 
+#flex-color {
+    display: flex;
+    flex-direction: row;
+}
+
 /*Sketch Grid*/
 
 #right h1 {

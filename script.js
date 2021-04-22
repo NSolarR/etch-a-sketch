@@ -1,5 +1,7 @@
-//Get reference to html reference
+//Get reference to html element
 const container = document.getElementById('container');
+
+const showColor = document.querySelector('.show-color');
 
 //Track if any mouse button is pressed
 let mouseDown = 0;
@@ -20,14 +22,23 @@ if (input == undefined) {
 let color;
 if (color == undefined) {
     color = `black`;
+    showColor.setAttribute("style", `color: white`);
+    showColor.textContent = `${color}`;
 }
 
 //Get color from button
 function getColor(str) {
     if (typeof str != 'string') {
-        console.log('ERROR: color button doesnt return a string')
+        console.log('ERROR: color button doesnt return a string');
     } else {
         color = str;
+        showColor.setAttribute("style", `color: ${color};`);
+        if (color == 'black') {
+            showColor.setAttribute("style", `color: white`);
+        }else {
+            showColor.setAttribute("style", `color: ${color};`);
+        }
+        showColor.textContent = `${color}`;
         return color;
     }
 }
