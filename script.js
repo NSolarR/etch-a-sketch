@@ -11,7 +11,7 @@ document.body.onmouseup = function() {
   mouseDown = 0;
 };
 
-//Initialize grid size and brush color;
+//Initialize grid size and brush color
 let input;
 if (input == undefined) {
     input = 16;

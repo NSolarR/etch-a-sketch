@@ -12,7 +12,7 @@
     I also kind of want to try adding proper mobile support
     to this site with media queries. I haven't used
     them much before though so we'll so how complicated it
-    is.
+    iss.
     
 # Post-project thoughts:
     Add description

@@ -13,7 +13,7 @@ body {
 }
 
 #left {
-    position:relative;
+    position: relative;
     justify-self: center;
     grid-area: left;
 }
