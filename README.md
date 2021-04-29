@@ -15,4 +15,11 @@
     iss.
     
 # Post-project thoughts:
-    Add description
+    Project ended up not being as hard as i thought it'd
+    be. Had a bit of trouble with generating the grid
+    because it kept overflowing weirdly. Had to set
+    the grid-template columns and rows in the js
+    instead of the css. After it worked fine. Had a lot
+    of fun though. It works weirdly on mobile because
+    there isn't really an equivelant to the mouseover
+    event.

@@ -1,8 +1,19 @@
 
 body {
+    position: relative;
+    margin: auto;
     background-color: black;
     color:white;
     overflow-x: hidden;
+}
+
+button {
+    border-style: solid;
+    border-color: rgb(51, 44, 44);
+}
+
+button:hover {
+    opacity: 0.6;
 }
 
 /*Layout*/
@@ -13,7 +24,9 @@ body {
 }
 
 #left {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     justify-self: center;
     grid-area: left;
 }
@@ -76,12 +89,22 @@ body {
 
 /*Sketch Grid*/
 
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+}
+
 #right h1 {
-    position:relative;
-    left:12%;
+    display: flex;
+    justify-content: center;
+    
 }
 
 #container {
+    box-shadow:  1px 1px 10px rgb(51, 44, 44);
     position:relative;
     grid-area: right;
     user-select: none;
@@ -95,12 +118,12 @@ body {
 .grid-item {
     background-color: white;
     border-style: solid;
-    border-color: burlywood;
+    border-color: rgb(211, 210, 210);
     border-width: 1px;
     color: white;
 }
 
-@media (min-width:300px) and (max-width:600px) {
+@media (max-width:950px) {
     body {
         overflow: hidden;
     }
@@ -122,5 +145,9 @@ body {
         height: 300px;
         grid-gap: 0;
         border: 5px solid rgb(51, 44, 44);
-      }
+    }
+
+    #left {
+        grid-area: left;
+    }
 }
